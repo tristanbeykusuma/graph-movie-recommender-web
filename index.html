@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Watch more Movies!
+        </title>
+		<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!-- header -->
+        <div id="header" class="h-100 d-flex align-items-center justify-content-center">
+            <h1>                     
+                User Movie Recommender
+            </h1>
+        </div>
+        
+        <!-- main-->
+        <div id="main" role="main" class="w-50 ml-0 mr-0 mx-auto">
+            <br/>
+            <p>
+                Enter a UserID below, hit "Movie Watched" to see user movie history or hit "Recommend" to see movie recommendations based on similarity.
+            </p>
+            <div class="ml-container">
+                <div>
+                <span>Enter User ID here..</span>
+                <input type="text" id="userInput" style="background-color:rgb(15, 15, 15); color:rgb(235, 235, 235)"/>
+                </div>
+                <br/>
+                <div id="submit-button">
+                    <button type="submit" class="btn btn-primary" id="movie-watched-btn">Movie Watched</button>
+                    <button type="submit" class="btn btn-primary" id="recommend-btn">Recommend</button>
+                </div>
+            </div>
+            <br/>
+            <div id="result"></div>
+            <br/>
+            <br/>
+            <p>
+                App by Tristan Bey Kusuma (2008561053)</a>, built using <a href="https://https://neo4j.com" target="_blank">Neo4j</a>. 
+            </p>
+        </div>
+                
+        <script src="/app.js" type="text/javascript"></script>
+    </body>
+</html>
